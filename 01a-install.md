@@ -54,7 +54,7 @@ Python 3. There weren't that many significant differences between the 2 versions
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-typing 'python' into the terminal window will start python and print the version. 
+typing 'python --version' into the terminal window will print the version. 
 
  
 
