@@ -55,8 +55,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+* ls -m  displays names as a comma separated list
+* ls -R displays subdirectories too
+* ls -u displays files in the order of access time
+* ls -1 displays each entry on a line
+* ls -o displays long format excluding group name
 ---
 
 ### Q4.  Xargs   
