@@ -18,24 +18,23 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
   
-*pwd = show current working directory path
-*mkdir sumDir = creating a directory
-*rmdir sumDir = deleting a directory
-*touch newdoc.txt . = creating a file using `touch` command
-*rm myfile.txt =  deleting a file
-*mv newdoc.txt newerdoc.txt =  renaming a file
-*ls -a = listing hidden files
-*cp newdoc.txt /Users/summer/temp/ = copying a file from one directory to another
-cd = change directory
-sudo = execute as super user
-chmod = change permissions
-../  = move up one directory
-exit
-cat = print entire file contents
-less = page through a file contents
-echo = print
-< > << >> |  piping 
-
+* pwd = show current working directory path
+* mkdir sumDir = creating a directory
+* rmdir sumDir = deleting a directory
+* touch newdoc.txt . = creating a file using `touch` command
+* rm myfile.txt =  deleting a file
+* mv newdoc.txt newerdoc.txt =  renaming a file
+* ls -a = listing hidden files
+* cp newdoc.txt /Users/summer/temp/ = copying a file from one directory to another
+* cd = change directory
+* sudo = execute as super user
+* chmod = change permissions
+* ../  = move up one directory
+* exit
+* cat = print entire file contents
+* less = page through a file contents
+* echo = print
+* < > << >> |  piping 
 
 ---
 
