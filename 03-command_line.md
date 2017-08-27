@@ -41,13 +41,14 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`    list the files in the current directory
-`ls -a`   list all the files in the current dir including hidden
-`ls -l`   list files and their formats and permissions
-`ls -lh`  lists files, formats and uses a suffix for the file size 'KB' = kilobyte etc...
-`ls -lah`  lists ALL files, formats and uses a suffix for the file size 'KB' = kilobyte etc...
-`ls -t`  displays files, newest first (timestamp)
-`ls -Glp`  displays files and directories. directories will be in bold followed by a forward slash
+
+* `ls`    list the files in the current directory
+* `ls -a`   list all the files in the current dir including hidden
+* `ls -l`   list files and their formats and permissions
+* `ls -lh`  lists files, formats and uses a suffix for the file size 'KB' = kilobyte etc...
+* `ls -lah`  lists ALL files, formats and uses a suffix for the file size 'KB' = kilobyte etc...
+* `ls -t`  displays files, newest first (timestamp)
+* `ls -Glp`  displays files and directories. directories will be in bold followed by a forward slash
 ---
 
 ### Q3.  More List Files in Unix  
