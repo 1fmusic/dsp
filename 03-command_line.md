@@ -64,9 +64,9 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 ### Q4.  Xargs   
 
-What does `xargs` do? Give an example of how to use it.
+What does `xargs` do? Give an example of how to use it.  
 
-'xargs' allows you to chain commands together that would typically only have one input . 
+'xargs' allows you to chain commands together that would typically only have one input  
 find /Users/ada/temp/ -name *.txt -print | xargs rm
 
  
