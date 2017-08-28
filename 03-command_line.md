@@ -66,7 +66,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+'xargs' allows you to chain commands together that would typically only have one input
+find /Users/ada/temp/ -name *.txt -print | xargs rm
 
  
 
