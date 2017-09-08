@@ -4,6 +4,8 @@
 
 def match_ends(words):
     """
+    Sadly, I only put this one into hacker rank and submitted it before I realized I needed to add it here. 
+
     Given a list of strings, return the count of the number of strings
     where the string length is 2 or more and the first and last chars
     of the string are the same.
@@ -19,70 +21,51 @@ def match_ends(words):
 
 
 def front_x(words):
-    """
-    Given a list of strings, return a list with the strings in sorted
-    order, except group all the strings that begin with 'x' first.
-    e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
-         ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'].
 
-    >>> front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa'])
-    ['xaa', 'xzz', 'axx', 'bbb', 'ccc']
-    >>> front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa'])
-    ['xaa', 'xcc', 'aaa', 'bbb', 'ccc']
-    >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
-    ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
-    """
-    raise NotImplementedError
+    y = list()
+    yy = list()
+    for xx in words :
+        if xx.startswith('x') == True :
+            y.append(xx) 
+                     
+        else :
+           yy.append(xx)
+    yy.sort() 
+    y.sort()              
+    return (y  + yy)  
+    
 
 
 def sort_last(tuples):
-    """
-    Given a list of non-empty tuples, return a list sorted in
-    increasing order by the last element in each tuple.
-    e.g. [(1, 7), (1, 3), (3, 4, 5), (2, 2)] yields
-         [(2, 2), (1, 3), (3, 4, 5), (1, 7)].
+    
+    def last_item(y):
+        return y[-1]
 
-    >>> sort_last([(1, 3), (3, 2), (2, 1)])
-    [(2, 1), (3, 2), (1, 3)]
-    >>> sort_last([(2, 3), (1, 2), (3, 1)])
-    [(3, 1), (1, 2), (2, 3)]
-    >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
-    [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
-    """
-    raise NotImplementedError
+    xx = sorted(tuples, key=last_item)
+        
+    return xx
 
 
+
+nums = [2,2, 3,3,3,3]
 def remove_adjacent(nums):
-    """
-    Given a list of numbers, return a list where all adjacent equal
-    elements have been reduced to a single element, so [1, 2, 2, 3]
-    returns [1, 2, 3]. You may create a new list or modify the passed
-    in list.
-
-    >>> remove_adjacent([1, 2, 2, 3])
-    [1, 2, 3]
-    >>> remove_adjacent([2, 2, 3, 3, 3])
-    [2, 3]
-    >>> remove_adjacent([3, 2, 3, 3, 3])
-    [3, 2, 3]
-    >>> remove_adjacent([])
-    []
-    """
-    raise NotImplementedError
+    y = len(nums)
+    cot = 0
+    for i in range(y-1) :
+        if  nums[cot]  == nums[cot + 1] :
+            nums.pop(cot)       
+        else :
+            cot = cot +1
+                  
+    return nums
 
 
-def linear_merge(list1, list2):
-    """
-    Given two lists sorted in increasing order, create and return a
-    merged list of all the elements in sorted order. You may modify
-    the passed in lists. Ideally, the solution should work in "linear"
-    time, making a single pass of both lists.
 
-    >>> linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
-    ['aa', 'bb', 'cc', 'xx', 'zz']
-    >>> linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
-    ['aa', 'bb', 'cc', 'xx', 'zz']
-    >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
-    ['aa', 'aa', 'aa', 'bb', 'bb']
-    """
-    raise NotImplementedError
+import itertools 
+
+def linear_merge(list1,list2):
+    
+    blist = list(itertools.chain(list1,list2))
+    blist.sort()
+    
+    return blist
