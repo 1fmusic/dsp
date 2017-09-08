@@ -11,9 +11,8 @@ def get_dict2(filename):
     deg = []
     aff = []
     email = []
-    #nam = []
     name = ()
-    names ={} #create dictionary of last names and rows
+    names ={} #create dictionary of last names and info
     
     with open(filename,'r') as fb :
         reader = csv.reader(fb, delimiter=',', quotechar='"')
@@ -26,9 +25,7 @@ def get_dict2(filename):
         deg.append(person[1])
         aff.append(person[2])
         email.append(person[3])
-        #du = nam[n].split()
-        #name.append(du[len(du)-1])
-   
+          
     for i in range(len(deg)): 
         names[tuple(name[i])] = names.get(tuple(name[i]),[deg[i],aff[i],email[i]])
 
