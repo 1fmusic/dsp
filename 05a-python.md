@@ -30,7 +30,7 @@ The functions that are specific to sets, are always faster and easier (requires 
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> 
+>> lambda allows for an anonymous in-line function to be defined and called in one line. 
 
 ---
 
@@ -38,8 +38,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> list comprehension is a way to condense the operations done on items in a list/dictionary instead of writing multiple for loops.  for example, this will cube all the odd elements of the numbers between 1 and 21 .  ex = [x ** 3 for x in range(1,22) if (x % 2) == 0] . 
 ---
 
 ### Complete the following problems by editing the files below:
