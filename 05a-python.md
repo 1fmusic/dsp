@@ -30,7 +30,7 @@ The functions that are specific to sets, are always faster and easier (requires 
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> lambda allows for an anonymous in-line function to be defined and called in one line. 
+>> lambda allows for an anonymous in-line function to be defined and called in one line. it also allows you to pass a function in as a variable (functional programming).  x = filter(lambda x: x % 3 == 0, my_list).  if you pass lambda to the filter function, filter uses lambda to decide what to filter and the second argument (my_list) is the list it will look through. 
 
 ---
 
